@@ -1,0 +1,237 @@
+#game{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: lightseagreen;
+	height: 100%;
+	width: 50%;
+	margin: 5% 25% 10% 25%; 
+	padding: 2% 1% 2% 1%; 
+	justify-content: center;
+	border-radius: 1%;
+	box-shadow: 5px 5px 13px lightgray, 5px 2px 7px darkgrey;
+}
+
+.tile{
+	background-color: #901e1d;
+	height: 100%;
+	width: 20%;
+	margin: 1% 3% 1% 3%;
+	padding: 7% 5% 7% 5%;
+	border: none;
+	font-family: 'Cinzel', cursive;
+	font-size: 200%;
+}
+
+.tile:focus{
+	cursor: pointer;
+	transform: rotateY(180deg);
+	transition: 2.5s;
+	color: darkgrey;
+	background-color: yellow;
+	height: 100%;
+	border: none;
+}
+
+
+button{
+	text-align: center;
+	font-size: 100%;
+	color: lightgrey;
+	padding-top: 10%;
+}
+
+div > h1{
+	margin: 0 0.5% 0 0.5%;
+}
+
+#game-wrapper{
+	display: none;
+}
+
+#welcome-head{
+	text-align: center;
+	color: #0a5f38;
+	font-family: smooch, cursive;
+	text-shadow: 1px 1px 1px #be013c;
+	font-size: 200%;
+}
+
+#welcome{
+	background-image: url(images/idyan.png);
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+#gameHeading{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	font-family: 'Lato';
+}
+
+#tic{
+	color: lightseagreen;
+	font-family: satisfy, cursive;
+}
+
+#tac{
+	color: #901e1d;
+	font-family: Amatic SC, cursive;
+}
+
+#toe{
+	color: #122b3e;
+	font-family: splash, cursive;
+}
+
+#rules{
+	text-align: center;
+	color: #4a0100;
+	font-family: Yeseva One, cursive;
+	text-shadow: 1px 1px 1px lightgray;
+}
+
+p{
+	color: #1e488f;
+	text-shadow: 1px 1px 1px #fff39a;
+	font-family: Poppins, sans;
+	font-size: 100%;
+	font-weight: 600;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	font-family: Permanent Marker, cursive;
+	color: #AAF0D1;
+	letter-spacing: 1px;
+	font-size: 80%;
+}
+
+#developer{
+	font-family: Bad Script, cursive;
+	color: yellow;
+	text-shadow: 1px 1px 1px navy, 1.5px 1.5px 1.5px white;
+	text-align: center;
+}
+
+#load-game{
+	padding: 2% 5% 2% 5%;
+	margin: 0 0 5% 40%;
+	background-color: inherit;
+	border: solid 1px #DA614E;
+	border-radius: 5px;
+	color: #DA614E;
+	font-family: Black Ops One, cursive;
+	text-transform: uppercase;
+}
+
+#load-game:hover{
+	background-color: #DA614E;
+	color: whitesmoke;
+	border: solid 1px whitesmoke;
+}
+
+#resetBtn{
+	display: none;
+	margin: 0 0 0 40%;
+	padding: 10% 0 10% 0;
+	color: #894585;
+	background-color: inherit;
+	text-transform: uppercase;
+	padding: 1% 3% 1% 3%;
+	border-radius: 5px;
+	border: solid 1px #894585;
+	font-family: Kalam, cursive;
+}
+
+#resetBtn:hover{
+	background-color: pink;
+	color: whitesmoke;
+}
+
+#slider-wrapper{
+	width: 100%;
+	height: 10%;
+	background-color: seagreen;
+	border-radius: 50px;
+}
+
+#slider{
+	width: 5%;
+	height: 5%;
+	border-radius: 50px;
+	background-color: yellow;
+	margin: 7% 1% 7% .20%;
+	border:  solid 2px beige;
+	color: green;
+	animation-duration: 1s;
+}
+
+#winners-div{
+	display: none;
+	background-image: url(images/happy1.gif);
+	background-size: contain;
+	padding: 5% 0 5% 10%;
+	position: relative;
+	align-items: center;
+}
+
+#winner-title{
+	padding: 0;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	color:  #adad85;
+	font-family: Fredericka The Great, cursive;
+}
+
+#new-game{
+	background-color: #122b3e;
+	padding: 4% 3% 4% 3%;
+	margin-left: 40%;
+	border-radius: 5px;
+	border:  solid 1px teal;
+	border-top-color: #901e1d;
+	border-bottom-color: lightseagreen;
+	border-left-color: #122b3e;
+	border-right-color: white;
+	font-family: 'Black Ops One', cursive;
+}
+
+#new-game:hover{
+	box-shadow: 5px 4px 10px lightgray;
+	background-color: #ac0b3e;
+}
+
+@media screen and (max-width: 500px) {
+   #game{
+   width: 100%;
+   margin-left: 0;
+   }
+
+   .tile{
+   	font-size: 100%;
+   }
+
+   #resetBtn{
+   	margin: 0 0 0 20%;
+   }
+
+   #new-game{
+   	margin: 0 0 0 20%;
+   }
+
+   #welcome{
+   	background-size: cover;
+   }
+
+   #load-game{
+   	padding: 5% 15% 5% 15%;
+   	margin: 0 0 5% 30%;
+   }
+
+   #slider{
+   	margin: 5% 1% 5% 1%;
+   }
+}

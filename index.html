@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title> Qic Qac Qoe, the Qoma way! </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="newYear.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Black+Ops+One&family=Caveat&family=Cinzel&family=Courgette&family=Dancing+Script&family=Permanent+Marker&family=Splash&family=Fredericka+the+Great&family=Handlee&family=Imperial+Script&family=Island+Moments&family=Kalam:wght@300&family=Licorice&family=Love+Light&family=Merienda&family=Moo+Lah+Lah&family=Moon+Dance&family=Rubik+Moonrocks&family=Smooch&family=Oooh+Baby&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;1,100&family=Pushster&family=Rock+Salt&family=Satisfy&family=Shadows+Into+Light&family=Shizuru&family=Source+Code+Pro:wght@200&family=Special+Elite&family=Vujahday+Script&family=Waterfall&family=Yeseva+One&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="newYear.js"></script>
+		
+	</head>
+	<body>
+		<div id="welcome">
+			<h2 id="welcome-head"> Hello World! </h2>
+			<p id="welcome-text"> 
+				Recieve a warm welcome to the Tic Tac Toe game. <br>
+				This is an ancient game that has carried a lot of adults through their childhood.<br>
+				Its the same old game that was previously played by hand using a pen and pad. <br><br>
+				<h3 id="rules">Rules </h3>
+				<p>There are 2 players : <b>X & O</b>.<br>
+				The first player to get their symbol in 3-tile sequential order wins the game i.e either vertically, horizontally or diagonally. <br> 
+				By default, the starting player is X. <br><br>
+
+
+
+				Click on the button below and play Qic Qac Qoe the " Qoma " way, or so I like to call it.<br>
+				ENJOY!!
+
+				<h2 id="developer"> Developer : Avile (Kimson) Sindelo </h2>
+				</p>
+			</p>
+			<button id="load-game" onclick="loadGame()"> Play </button>
+		</div>
+
+		<div id="game-wrapper">
+			<div id="gameHeading">
+				<h1 id="tic"> Tic </h1> <h1 id="tac"> Tac </h1> <h1 id="toe"> Toe </h1>
+			</div>
+
+			<div id="winners-div">
+				<h3 id="winner-title"> </h3>
+				<button id="new-game" onclick="newGame()"> New Game </button>
+			</div>
+			<button id="resetBtn" onclick="resetHandler()"> reset game </button>
+			<div id="game"> 
+				<button class="tile" id="tile-1" onclick="clickHandler(1)"> ? </button>
+				<button class="tile" id="tile-2" onclick="clickHandler(2)"> ? </button>
+				<button class="tile" id="tile-3" onclick="clickHandler(3)"> ? </button>
+				<button class="tile" id="tile-4" onclick="clickHandler(4)"> ? </button>
+				<button class="tile" id="tile-5" onclick="clickHandler(5)"> ? </button>
+				<button class="tile" id="tile-6" onclick="clickHandler(6)"> ? </button>
+				<button class="tile" id="tile-7" onclick="clickHandler(7)"> ? </button>
+				<button class="tile" id="tile-8" onclick="clickHandler(8)"> ? </button>
+				<button class="tile" id="tile-9" onclick="clickHandler(9)"> ? </button>
+			</div>	
+		</div>	
+	</body>
+
+	<footer> Copyright &copy; KimsonKodes.za </footer>
+</html>
